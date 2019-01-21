@@ -24,6 +24,7 @@ namespace BeFaster.App.Tests.Solutions.SUM
             
             Assert.Throws<ArgumentException>(() =>
             {
+                // Act
                 SumSolution.Sum(x, y);
             });
         }
@@ -39,6 +40,7 @@ namespace BeFaster.App.Tests.Solutions.SUM
 
             Assert.Throws<ArgumentException>(() =>
             {
+                // Act
                 SumSolution.Sum(x, y);
             });
         }
@@ -55,6 +57,7 @@ namespace BeFaster.App.Tests.Solutions.SUM
 
             Assert.Throws<ArgumentException>(() =>
             {
+                // Act
                 SumSolution.Sum(x, y);
             });
         }
@@ -68,14 +71,15 @@ namespace BeFaster.App.Tests.Solutions.SUM
             int y = -1;
 
             // Assert
-
             Assert.Throws<ArgumentException>(() =>
             {
+                // Act
                 SumSolution.Sum(x, y);
             });
         }
 
     }
 }
+
 
 
