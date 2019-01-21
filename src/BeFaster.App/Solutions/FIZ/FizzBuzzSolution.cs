@@ -36,13 +36,10 @@
                 .setNext(buzzContainerHandler)
                 .setNext(numberHandler);
 
-            string result = fizzBuzzDeluxeHandler.Handle(number);
+            string result = fakeFizzBuzzDeluxeHandler.Handle(number);
 
             return result;
         }
     }
 
 }
-
-
-
