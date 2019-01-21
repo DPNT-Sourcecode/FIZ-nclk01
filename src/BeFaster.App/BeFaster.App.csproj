@@ -62,12 +62,14 @@
     <Compile Include="SendCommandToServer.cs" />
     <Compile Include="Solutions\CHK\CheckoutSolution.cs" />
     <Compile Include="Solutions\FIZ\AbstractHandler.cs" />
+    <Compile Include="Solutions\FIZ\FizzBuzzDeluxeHandler.cs" />
     <Compile Include="Solutions\FIZ\FizzBuzzContainerHandler.cs" />
     <Compile Include="Solutions\FIZ\BuzzHandler.cs" />
     <Compile Include="Solutions\FIZ\FizzBuzzHandler.cs" />
     <Compile Include="Solutions\FIZ\FizzBuzzSolution.cs" />
     <Compile Include="Solutions\FIZ\BuzzContainerHandler.cs" />
     <Compile Include="Solutions\FIZ\FizzContainerHandler.cs" />
+    <Compile Include="Solutions\FIZ\DeluxeHandler.cs" />
     <Compile Include="Solutions\FIZ\FizzHandler.cs" />
     <Compile Include="Solutions\FIZ\IHandler.cs" />
     <Compile Include="Solutions\FIZ\NumberHandler.cs" />

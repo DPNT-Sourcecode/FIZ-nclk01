@@ -1,6 +1,6 @@
 ﻿namespace BeFaster.App.Solutions.FIZ
 {
-    public class DeluxHandler : AbstractHandler
+    public class DeluxeHandler : AbstractHandler
     {
         public override string Handle(int number)
         {
@@ -19,3 +19,4 @@
     }
 
 }
+

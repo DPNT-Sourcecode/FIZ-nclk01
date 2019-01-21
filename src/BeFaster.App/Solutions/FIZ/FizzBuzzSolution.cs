@@ -4,8 +4,8 @@
     {
         public static string FizzBuzz(int number)
         {
-            var fizzBuzzDeluxHandler = new FizzBuzzDeluxHandler();
-            var deluxHandler = new DeluxHandler();
+            var fizzBuzzDeluxeHandler = new FizzBuzzDeluxeHandler();
+            var deluxeHandler = new DeluxeHandler();
             var fizzBuzzHandler = new FizzBuzzHandler();
             var fizzBuzzContainerHandler = new FizzBuzzContainerHandler();
             var fizzHandler = new FizzHandler();
@@ -14,8 +14,8 @@
             var buzzContainerHandler = new BuzzContainerHandler();
             var numberHandler = new NumberHandler();
 
-            fizzBuzzDeluxHandler
-                .setNext(deluxHandler)
+            fizzBuzzDeluxeHandler
+                .setNext(deluxeHandler)
                 .setNext(fizzBuzzHandler)
                 .setNext(fizzBuzzContainerHandler)
                 .setNext(fizzHandler)
@@ -31,4 +31,5 @@
     }
 
 }
+
 

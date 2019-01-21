@@ -2,7 +2,7 @@
 
 namespace BeFaster.App.Solutions.FIZ
 {
-    public class FizzBuzzDeluxHandler : AbstractHandler
+    public class FizzBuzzDeluxeHandler : AbstractHandler
     {
         public override string Handle(int number)
         {
@@ -29,5 +29,3 @@ namespace BeFaster.App.Solutions.FIZ
     }
 
 }
-
-
