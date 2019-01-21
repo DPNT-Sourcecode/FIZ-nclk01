@@ -4,9 +4,9 @@
     {
         public static string FizzBuzz(int number)
         {
-            var fakeFizzBuzzDeluxeHandler = new FakeFizzBuzzDeluxeHandler();
-            var fakeFizzDeluxeHandler = new FizzFakeDeluxeHandler();
-            var fakeBuzzDeluxeHandler = new BuzzFakeDeluxeHandler();
+            var fizzBuzzFakeDeluxeHandler = new FizzBuzzFakeDeluxeHandler();
+            var fizzFakeDeluxeHandler = new FizzFakeDeluxeHandler();
+            var buzzFakeDeluxeHandler = new BuzzFakeDeluxeHandler();
             var fizzBuzzDeluxeHandler = new FizzBuzzDeluxeHandler();
             var fizzDeluxeHandler = new FizzDeluxeHandler();
             var buzzDeluxeHandler = new BuzzDeluxeHandler();
@@ -20,9 +20,9 @@
             var buzzContainerHandler = new BuzzContainerHandler();
             var numberHandler = new NumberHandler();
 
-            fakeFizzBuzzDeluxeHandler
-                .setNext(fakeFizzDeluxeHandler)
-                .setNext(fakeBuzzDeluxeHandler)
+            fizzBuzzFakeDeluxeHandler
+                .setNext(fizzFakeDeluxeHandler)
+                .setNext(buzzFakeDeluxeHandler)
                 .setNext(fizzBuzzDeluxeHandler)
                 .setNext(fizzDeluxeHandler)
                 .setNext(buzzDeluxeHandler)
@@ -36,11 +36,12 @@
                 .setNext(buzzContainerHandler)
                 .setNext(numberHandler);
 
-            string result = fakeFizzBuzzDeluxeHandler.Handle(number);
+            string result = fizzBuzzFakeDeluxeHandler.Handle(number);
 
             return result;
         }
     }
 
 }
+
 

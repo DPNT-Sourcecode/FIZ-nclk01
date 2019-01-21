@@ -2,7 +2,7 @@
 
 namespace BeFaster.App.Solutions.FIZ
 {
-    public class FakeFizzBuzzDeluxeHandler : AbstractHandler
+    public class FizzBuzzFakeDeluxeHandler : AbstractHandler
     {
         public override string Handle(int number)
         {
@@ -20,7 +20,7 @@ namespace BeFaster.App.Solutions.FIZ
                 )
                )
             {
-                return "fake fizz buzz deluxe";
+                return "fizz buzz fake deluxe";
             }
             else
             {
