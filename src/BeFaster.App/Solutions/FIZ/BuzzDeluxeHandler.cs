@@ -18,7 +18,7 @@ namespace BeFaster.App.Solutions.FIZ
                 )
                )
             {
-                return "fizz deluxe";
+                return "buzz deluxe";
             }
             else
             {
@@ -28,3 +28,4 @@ namespace BeFaster.App.Solutions.FIZ
     }
 
 }
+
