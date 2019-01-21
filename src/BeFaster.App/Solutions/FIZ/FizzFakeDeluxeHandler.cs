@@ -1,6 +1,6 @@
 ﻿namespace BeFaster.App.Solutions.FIZ
 {
-    public class FakeFizzDeluxeHandler : AbstractHandler
+    public class FizzFakeDeluxeHandler : AbstractHandler
     {
         public override string Handle(int number)
         {
@@ -16,7 +16,7 @@
                 (number % 3 == 0)
                 )
             {
-                return "fake fizz deluxe";
+                return "fizz fake deluxe";
             }
             else
             {

@@ -5,8 +5,8 @@
         public static string FizzBuzz(int number)
         {
             var fakeFizzBuzzDeluxeHandler = new FakeFizzBuzzDeluxeHandler();
-            var fakeFizzDeluxeHandler = new FakeFizzDeluxeHandler();
-            var fakeBuzzDeluxeHandler = new FakeBuzzDeluxeHandler();
+            var fakeFizzDeluxeHandler = new FizzFakeDeluxeHandler();
+            var fakeBuzzDeluxeHandler = new BuzzFakeDeluxeHandler();
             var fizzBuzzDeluxeHandler = new FizzBuzzDeluxeHandler();
             var fizzDeluxeHandler = new FizzDeluxeHandler();
             var buzzDeluxeHandler = new BuzzDeluxeHandler();
@@ -43,3 +43,4 @@
     }
 
 }
+
