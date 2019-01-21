@@ -39,7 +39,7 @@ namespace BeFaster.App.Solutions.FIZ
             fizzBuzzHandler.setNext(fizzHandler).setNext(buzzHandler).setNext(numberHandler);
             // fizzHandler.setNext(buzzHandler).setNext(fizzBuzzHandler).setNext(numberHandler);
 
-            string result = fizzHandler.Handle(number);
+            string result = fizzBuzzHandler.Handle(number);
 
             return result;
         }
@@ -106,16 +106,8 @@ namespace BeFaster.App.Solutions.FIZ
     }
 
 
+
     public class FizzBuzzHandler : AbstractHandler
-    {
-        public override string Handle(int number)
-        {
-            return Convert.ToString(number);
-        }
-    }
-
-
-    public class NumberHandler : AbstractHandler
     {
         public override string Handle(int number)
         {
@@ -130,8 +122,18 @@ namespace BeFaster.App.Solutions.FIZ
         }
     }
 
-    
+
+    public class NumberHandler : AbstractHandler
+    {
+        public override string Handle(int number)
+        {
+            return Convert.ToString(number);
+        }
+    }
+
+
 }
+
 
 
 
