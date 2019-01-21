@@ -33,8 +33,16 @@ namespace BeFaster.App.Tests.Solutions.FIZ
             return FizzBuzzSolution.FizzBuzz(number);
         }
 
+
+
+        // [TestCase(7, ExpectedResult = "7")]
+        [Test]
+        public void ChainOfResponsibilityTest()
+        {
+            TestProgram.Test();
+        }
+
+
     }
+
 }
-
-
-

@@ -129,7 +129,7 @@ namespace BeFaster.App.Solutions.FIZ
 
     public class TestProgram
     {
-        static void Test()
+        public static void Test()
         {
             var monkey = new MonkeyHandler();
             var squirrel = new SquirrelHandler();
@@ -149,5 +149,3 @@ namespace BeFaster.App.Solutions.FIZ
 
 
 }
-
-
