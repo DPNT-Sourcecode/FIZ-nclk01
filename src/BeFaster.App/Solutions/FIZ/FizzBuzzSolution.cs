@@ -36,8 +36,8 @@ namespace BeFaster.App.Solutions.FIZ
             var fizzBuzzHandler = new FizzBuzzHandler();
             var numberHandler = new NumberHandler();
 
-            fizzHandler.setNext(buzzHandler).setNext(fizzBuzzHandler).setNext(numberHandler);
-
+            fizzBuzzHandler.setNext(fizzHandler).setNext(buzzHandler).setNext(numberHandler);
+            // fizzHandler.setNext(buzzHandler).setNext(fizzBuzzHandler).setNext(numberHandler);
 
             string result = fizzHandler.Handle(number);
 
@@ -132,6 +132,7 @@ namespace BeFaster.App.Solutions.FIZ
 
     
 }
+
 
 
 
