@@ -62,6 +62,8 @@
     <Compile Include="SendCommandToServer.cs" />
     <Compile Include="Solutions\CHK\CheckoutSolution.cs" />
     <Compile Include="Solutions\FIZ\AbstractHandler.cs" />
+    <Compile Include="Solutions\FIZ\BuzzDeluxeHandler.cs" />
+    <Compile Include="Solutions\FIZ\FizzDeluxeHandler.cs" />
     <Compile Include="Solutions\FIZ\FizzBuzzDeluxeHandler.cs" />
     <Compile Include="Solutions\FIZ\FizzBuzzContainerHandler.cs" />
     <Compile Include="Solutions\FIZ\BuzzHandler.cs" />
