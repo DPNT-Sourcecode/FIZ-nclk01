@@ -1,18 +1,14 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BeFaster.App.Solutions.FIZ
 {
-    public class FizzNumberContainerHandler : AbstractHandler
+    public class FizzBuzzContainerHandler : AbstractHandler
     {
         public override string Handle(int number)
         {
-            if (Convert.ToString(number).IndexOf('3') > 0)
+            if (Convert.ToString(number).IndexOf('5') > 0)
             {
-                return "fizz";
+                return "fizz buzz";
             }
             else
             {
@@ -21,5 +17,3 @@ namespace BeFaster.App.Solutions.FIZ
         }
     }
 }
-
-

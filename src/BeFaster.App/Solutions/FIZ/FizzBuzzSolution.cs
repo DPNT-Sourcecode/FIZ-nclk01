@@ -8,10 +8,12 @@
             var fizzNumberContainerHandler = new FizzNumberContainerHandler();
             var buzzHandler = new BuzzHandler();
             var fizzBuzzHandler = new FizzBuzzHandler();
+            var fizzBuzzContainerHandler = new FizzBuzzContainerHandler();
             var buzzContainerHandler = new BuzzContainerHandler();
             var numberHandler = new NumberHandler();
 
             fizzBuzzHandler
+                .setNext(fizzBuzzContainerHandler)
                 .setNext(fizzHandler)
                 .setNext(fizzNumberContainerHandler)
                 .setNext(buzzHandler)
@@ -25,4 +27,5 @@
     }
 
 }
+
 
