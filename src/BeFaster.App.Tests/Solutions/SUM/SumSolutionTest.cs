@@ -13,13 +13,69 @@ namespace BeFaster.App.Tests.Solutions.SUM
             return SumSolution.Sum(x, y);
         }
 
-        //[TestCase(101, 1, [ExpectedException(typeof(ArgumentException))])]
         [Test]
-        [ExpectedException(typeof(System.ArgumentException))]
-        public int ComputeSumInvalidInputx(int x, int y)
+        public void ComputeSumInvalidHigherValueInputx()
         {
-            return SumSolution.Sum(101, 1);
+            // Arrange
+            int x = 101;
+            int y = 1;
+
+            // Assert
+            
+            Assert.Throws<ArgumentException>(() =>
+            {
+                SumSolution.Sum(x, y);
+            });
         }
+
+        [Test]
+        public void ComputeSumInvalidLowerValueInputx()
+        {
+            // Arrange
+            int x = -1;
+            int y = 1;
+
+            // Assert
+
+            Assert.Throws<ArgumentException>(() =>
+            {
+                SumSolution.Sum(x, y);
+            });
+        }
+
+
+        [Test]
+        public void ComputeSumInvalidHigherValueInputy()
+        {
+            // Arrange
+            int x = 1;
+            int y = 101;
+
+            // Assert
+
+            Assert.Throws<ArgumentException>(() =>
+            {
+                SumSolution.Sum(x, y);
+            });
+        }
+
+
+        [Test]
+        public void ComputeSumInvalidLowerValueInputy()
+        {
+            // Arrange
+            int x = 1;
+            int y = -1;
+
+            // Assert
+
+            Assert.Throws<ArgumentException>(() =>
+            {
+                SumSolution.Sum(x, y);
+            });
+        }
+
     }
 }
+
 
