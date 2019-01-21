@@ -71,8 +71,8 @@ namespace BeFaster.App.Tests.Solutions.FIZ
 
         // Delux tests
 
-        [TestCase(9, ExpectedResult = "buzz")]
-        public string BuzzNoDeluxeTest(int number)
+        [TestCase(9, ExpectedResult = "fizz")]
+        public string BuzzNoDeluxeNumberLessThan10Test(int number)
         {
             return FizzBuzzSolution.FizzBuzz(number);
         }
@@ -115,6 +115,3 @@ namespace BeFaster.App.Tests.Solutions.FIZ
     }
 
 }
-
-
-

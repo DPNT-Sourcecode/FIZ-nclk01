@@ -24,12 +24,10 @@
                 .setNext(buzzContainerHandler)
                 .setNext(numberHandler);
 
-            string result = fizzBuzzHandler.Handle(number);
+            string result = fizzBuzzDeluxeHandler.Handle(number);
 
             return result;
         }
     }
 
 }
-
-
