@@ -4,11 +4,11 @@
     {
         public static string FizzBuzz(int number)
         {
+            var fizzBuzzHandler = new FizzBuzzHandler();
+            var fizzBuzzContainerHandler = new FizzBuzzContainerHandler();
             var fizzHandler = new FizzHandler();
             var fizzNumberContainerHandler = new FizzNumberContainerHandler();
             var buzzHandler = new BuzzHandler();
-            var fizzBuzzHandler = new FizzBuzzHandler();
-            var fizzBuzzContainerHandler = new FizzBuzzContainerHandler();
             var buzzContainerHandler = new BuzzContainerHandler();
             var numberHandler = new NumberHandler();
 
@@ -27,3 +27,4 @@
     }
 
 }
+
