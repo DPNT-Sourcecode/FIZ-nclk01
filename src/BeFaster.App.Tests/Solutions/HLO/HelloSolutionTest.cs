@@ -11,10 +11,11 @@ namespace BeFaster.App.Tests.Solutions.HLO
     [TestFixture]
     public class HelloSolutionTest
     {
-        [TestCase("Martin", ExpectedResult = "Hello World")]
+        [TestCase("Craftsman", ExpectedResult = "Hello, World!")]
         public string ComputeSum(string friendName)
         {
             return HelloSolution.Hello(friendName);
         }
     }
 }
+
