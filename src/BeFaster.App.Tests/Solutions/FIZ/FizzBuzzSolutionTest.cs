@@ -72,20 +72,50 @@ namespace BeFaster.App.Tests.Solutions.FIZ
         // Delux tests
 
         [TestCase(9, ExpectedResult = "buzz")]
-        public string BuzzNoDeluxTest(int number)
-        {
-            return FizzBuzzSolution.FizzBuzz(number);
-        }
-
-
-
-        [TestCase(77, ExpectedResult = "deluxe")]
         public string BuzzNoDeluxeTest(int number)
         {
             return FizzBuzzSolution.FizzBuzz(number);
         }
+        
+
+        [TestCase(77, ExpectedResult = "deluxe")]
+        public string DeluxeLessThan100Test(int number)
+        {
+            return FizzBuzzSolution.FizzBuzz(number);
+        }
+
+        
+        [TestCase(333, ExpectedResult = "deluxe")]
+        public string DeluxeLessThan1000Test(int number)
+        {
+            return FizzBuzzSolution.FizzBuzz(number);
+        }
+
+
+        [TestCase(9999, ExpectedResult = "deluxe")]
+        public string DeluxeLessThan10000Test(int number)
+        {
+            return FizzBuzzSolution.FizzBuzz(number);
+        }
+
+
+
+
+        [TestCase(555, ExpectedResult = "fizz buzz deluxe")]
+        public string DeluxeLessThan10000Test(int number)
+        {
+            return FizzBuzzSolution.FizzBuzz(number);
+        }
+
+
+
+
+
+
+
 
     }
 
 }
+
 
