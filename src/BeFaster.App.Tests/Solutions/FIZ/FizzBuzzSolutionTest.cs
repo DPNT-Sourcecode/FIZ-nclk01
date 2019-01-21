@@ -141,8 +141,8 @@ namespace BeFaster.App.Tests.Solutions.FIZ
 
         // fake deluxe
 
-        [TestCase(777, ExpectedResult = "fake deluxe")]
-        public string FakeDeluxeLessThan1000Test(int number)
+        [TestCase(77, ExpectedResult = "fake deluxe")]
+        public string FakeDeluxeLessThan100Test(int number)
         {
             return FizzBuzzSolution.FizzBuzz(number);
         }
@@ -161,4 +161,5 @@ namespace BeFaster.App.Tests.Solutions.FIZ
     }
 
 }
+
 

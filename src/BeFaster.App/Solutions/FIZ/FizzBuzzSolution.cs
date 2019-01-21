@@ -20,6 +20,7 @@
             fizzBuzzDeluxeHandler
                 .setNext(fizzDeluxeHandler)
                 .setNext(buzzDeluxeHandler)
+                .setNext(fakeDeluxeHandler)
                 .setNext(deluxeHandler)
                 .setNext(fizzBuzzHandler)
                 .setNext(fizzBuzzContainerHandler)
@@ -36,4 +37,5 @@
     }
 
 }
+
 
