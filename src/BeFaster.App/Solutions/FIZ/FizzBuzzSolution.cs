@@ -7,6 +7,7 @@
             var fizzBuzzDeluxeHandler = new FizzBuzzDeluxeHandler();
             var fizzDeluxeHandler = new FizzDeluxeHandler();
             var buzzDeluxeHandler = new BuzzDeluxeHandler();
+            var fakeDeluxeHandler = new FakeDeluxeHandler();
             var deluxeHandler = new DeluxeHandler();
             var fizzBuzzHandler = new FizzBuzzHandler();
             var fizzBuzzContainerHandler = new FizzBuzzContainerHandler();
@@ -35,3 +36,4 @@
     }
 
 }
+
