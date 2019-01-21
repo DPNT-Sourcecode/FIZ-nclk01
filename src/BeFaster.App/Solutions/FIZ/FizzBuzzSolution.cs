@@ -30,7 +30,7 @@ namespace BeFaster.App.Solutions.FIZ
 
     }
 
-    interface Handler
+    public interface Handler
     {
         Handler setNext(Handler handler);
 
@@ -117,4 +117,5 @@ namespace BeFaster.App.Solutions.FIZ
 
     
 }
+
 
