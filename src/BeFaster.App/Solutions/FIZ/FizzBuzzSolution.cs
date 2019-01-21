@@ -5,30 +5,6 @@ namespace BeFaster.App.Solutions.FIZ
 {
     public static class FizzBuzzSolution
     {
-        //public static string FizzBuzz(int number)
-        //{
-        //    string message = string.Empty;
-
-        //    if (number % 3 == 0 && number % 5 == 0)
-        //    {
-        //        message = "fizz buzz";
-        //    }
-        //    else if (number % 3 == 0)
-        //    {
-        //        message = "fizz";
-        //    }
-        //    else if (number % 5 == 0)
-        //    {
-        //        message = "buzz";
-        //    }
-        //    else
-        //    {
-        //        message = Convert.ToString(number);
-        //    }
-        //    return message;
-        //}
-
-
         public static string FizzBuzz(int number)
         {
             var fizzHandler = new FizzHandler();
@@ -37,7 +13,6 @@ namespace BeFaster.App.Solutions.FIZ
             var numberHandler = new NumberHandler();
 
             fizzBuzzHandler.setNext(fizzHandler).setNext(buzzHandler).setNext(numberHandler);
-            // fizzHandler.setNext(buzzHandler).setNext(fizzBuzzHandler).setNext(numberHandler);
 
             string result = fizzBuzzHandler.Handle(number);
 
@@ -45,18 +20,18 @@ namespace BeFaster.App.Solutions.FIZ
         }
     }
 
-    public interface Handler
+    public interface IHandler
     {
-        Handler setNext(Handler handler);
+        IHandler setNext(IHandler handler);
 
         string Handle(int number);
     }
 
-    public abstract class AbstractHandler : Handler
+    public abstract class AbstractHandler : IHandler
     {
-        private Handler nextHandler;
+        private IHandler nextHandler;
 
-        public Handler setNext(Handler handler)
+        public IHandler setNext(IHandler handler)
         {
             this.nextHandler = handler;
             return handler;
@@ -133,6 +108,7 @@ namespace BeFaster.App.Solutions.FIZ
 
 
 }
+
 
 
 
