@@ -34,10 +34,10 @@ namespace BeFaster.App.Solutions.FIZ
     {
         Handler setNext(Handler handler);
 
-        object Handle(object request);
+        string Handle(int number);
     }
 
-    abstract class AbstractHandler : Handler
+    public abstract class AbstractHandler : Handler
     {
         private Handler nextHandler;
 
@@ -47,11 +47,11 @@ namespace BeFaster.App.Solutions.FIZ
             return handler;
         }
 
-        public virtual object Handle(object request)
+        public virtual string Handle(int number)
         {
             if (this.nextHandler != null)
             {
-                return this.nextHandler.Handle(request);
+                return this.nextHandler.Handle(number);
             }
             else
             {
@@ -60,92 +60,61 @@ namespace BeFaster.App.Solutions.FIZ
         }
     }
 
-    class MonkeyHandler : AbstractHandler
+    public class FizzHandler : AbstractHandler
     {
-        public override object Handle(object request)
+        public override string Handle(int number)
         {
-            if ((request as string) == "Banana")
+            if (number % 3 == 0)
             {
-                return "Monkey: I'll eat the " + request.ToString() + ".\n";
+                return "fizz";
             }
             else
             {
-                return base.Handle(request);
+                return base.Handle(number);
             }
         }
     }
 
-    class SquirrelHandler : AbstractHandler
+    public class BuzzHandler : AbstractHandler
     {
-        public override object Handle(object request)
+        public override string Handle(int number)
         {
-            if (request.ToString() == "Nut")
+            if (number % 5 == 0)
             {
-                return "Squirrel: I'll eat the " + request.ToString() + ".\n";
+                return "buzz";
             }
             else
             {
-                return base.Handle(request);
+                return base.Handle(number);
             }
         }
     }
 
-    class DogHandler : AbstractHandler
+
+    public class FizzBuzzHandler : AbstractHandler
     {
-        public override object Handle(object request)
+        public override string Handle(int number)
         {
-            if (request.ToString() == "MeatBall")
+            return Convert.ToString(number);
+        }
+    }
+
+
+    public class NumberHandler : AbstractHandler
+    {
+        public override string Handle(int number)
+        {
+            if (number % 3 == 0 && number % 5 == 0)
             {
-                return "Dog: I'll eat the " + request.ToString() + ".\n";
+                return "fizz buzz";
             }
             else
             {
-                return base.Handle(request);
+                return base.Handle(number);
             }
         }
     }
 
-    class Client
-    {
-        public static void ClientCode(AbstractHandler handler)
-        {
-            foreach (var food in new List<string> { "Nut", "Banana", "Cup of coffee" })
-            {
-                Console.WriteLine("Client: Who wants a " + food + "?");
-
-                var result = handler.Handle(food);
-
-                if (result != null)
-                {
-                    Console.Write("   " + result);
-                }
-                else
-                {
-                    Console.WriteLine("   " + food + " was left untouched.");
-                }
-            }
-        }
-    }
-
-    public class TestProgram
-    {
-        public static void Test()
-        {
-            var monkey = new MonkeyHandler();
-            var squirrel = new SquirrelHandler();
-            var dog = new DogHandler();
-
-            monkey.setNext(squirrel).setNext(dog);
-
-            Console.WriteLine("Chain: Monkey > Squirerel > Dog\n");
-            Client.ClientCode(monkey);
-            Console.WriteLine();
-
-            Console.WriteLine("Subchain: Squirrel > Dog\n");
-            Client.ClientCode(squirrel);
-        }
-    }
-
-
-
+    
 }
+
