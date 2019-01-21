@@ -34,15 +34,7 @@ namespace BeFaster.App.Tests.Solutions.FIZ
         }
 
 
-
-        // [TestCase(7, ExpectedResult = "7")]
-        [Test]
-        public void ChainOfResponsibilityTest()
-        {
-            TestProgram.Test();
-        }
-
-
     }
 
 }
+
