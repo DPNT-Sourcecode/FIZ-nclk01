@@ -1,5 +1,6 @@
 ﻿using BeFaster.App.Solutions.SUM;
 using NUnit.Framework;
+using System;
 
 namespace BeFaster.App.Tests.Solutions.SUM
 {
@@ -12,10 +13,13 @@ namespace BeFaster.App.Tests.Solutions.SUM
             return SumSolution.Sum(x, y);
         }
 
-        [TestCase(101, 1, ExpectedResult = 2)]
+        //[TestCase(101, 1, [ExpectedException(typeof(ArgumentException))])]
+        [Test]
+        [ExpectedException(typeof(System.ArgumentException))]
         public int ComputeSumInvalidInputx(int x, int y)
         {
-            return SumSolution.Sum(x, y);
+            return SumSolution.Sum(101, 1);
         }
     }
 }
+
