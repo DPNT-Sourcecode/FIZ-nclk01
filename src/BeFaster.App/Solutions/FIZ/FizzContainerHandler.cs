@@ -10,7 +10,7 @@ namespace BeFaster.App.Solutions.FIZ
     {
         public override string Handle(int number)
         {
-            if (Convert.ToString(number).IndexOf('3') > 0)
+            if (Convert.ToString(number).IndexOf('3') >= 0)
             {
                 return "fizz";
             }
@@ -21,5 +21,3 @@ namespace BeFaster.App.Solutions.FIZ
         }
     }
 }
-
-
