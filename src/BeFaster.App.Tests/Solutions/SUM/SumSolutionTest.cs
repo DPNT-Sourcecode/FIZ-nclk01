@@ -1,6 +1,6 @@
-﻿using BeFaster.App.Solutions.SUM;
+﻿using System;
 using NUnit.Framework;
-using System;
+using BeFaster.App.Solutions.SUM;
 
 namespace BeFaster.App.Tests.Solutions.SUM
 {
@@ -80,3 +80,4 @@ namespace BeFaster.App.Tests.Solutions.SUM
 
     }
 }
+
