@@ -4,7 +4,10 @@
     {
         public override string Handle(int number)
         {
-            if (number % 11 == 0)
+            if ((number % 11 == 0) ||
+                (number % 111 == 0) ||
+                (number % 1111 == 0)
+                )
             {
                 return "deluxe";
             }
@@ -16,3 +19,4 @@
     }
 
 }
+
