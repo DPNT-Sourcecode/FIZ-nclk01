@@ -41,7 +41,7 @@ namespace BeFaster.App.Tests.Solutions.FIZ
 
 
 
-        [TestCase(513, ExpectedResult = "fizz buzz")]
+        [TestCase(315, ExpectedResult = "fizz buzz")]
         public string FizzBuzzContainerTest(int number)
         {
             return FizzBuzzSolution.FizzBuzz(number);
@@ -54,7 +54,7 @@ namespace BeFaster.App.Tests.Solutions.FIZ
             return FizzBuzzSolution.FizzBuzz(number);
         }
 
-        [TestCase(325, ExpectedResult = "fizz buzz")]
+        [TestCase(325, ExpectedResult = "buzz fake deluxe")]
         public string FizzBuzzByContainerBuzzByDivisibleFizzTest(int number)
         {
             return FizzBuzzSolution.FizzBuzz(number);
@@ -177,4 +177,5 @@ namespace BeFaster.App.Tests.Solutions.FIZ
     }
 
 }
+
 
