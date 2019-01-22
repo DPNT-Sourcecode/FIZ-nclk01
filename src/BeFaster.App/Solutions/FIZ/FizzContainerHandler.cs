@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BeFaster.App.Solutions.FIZ
 {
-    public class FizzNumberContainerHandler : AbstractHandler
+    public class FizzContainerHandler : AbstractHandler
     {
         public override string Handle(int number)
         {
@@ -21,3 +21,4 @@ namespace BeFaster.App.Solutions.FIZ
         }
     }
 }
+

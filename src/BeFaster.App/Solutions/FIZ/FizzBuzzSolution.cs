@@ -15,26 +15,47 @@
             var fizzBuzzHandler = new FizzBuzzHandler();
             var fizzBuzzContainerHandler = new FizzBuzzContainerHandler();
             var fizzHandler = new FizzHandler();
-            var fizzNumberContainerHandler = new FizzNumberContainerHandler();
+            var fizzContainerHandler = new FizzContainerHandler();
             var buzzHandler = new BuzzHandler();
             var buzzContainerHandler = new BuzzContainerHandler();
             var numberHandler = new NumberHandler();
 
+
             fizzBuzzFakeDeluxeHandler
                 .setNext(fizzFakeDeluxeHandler)
                 .setNext(buzzFakeDeluxeHandler)
+                .setNext(fakeDeluxeHandler)
                 .setNext(fizzBuzzDeluxeHandler)
                 .setNext(fizzDeluxeHandler)
                 .setNext(buzzDeluxeHandler)
-                .setNext(fakeDeluxeHandler)
                 .setNext(deluxeHandler)
                 .setNext(fizzBuzzHandler)
                 .setNext(fizzBuzzContainerHandler)
                 .setNext(fizzHandler)
-                .setNext(fizzNumberContainerHandler)
+                .setNext(fizzContainerHandler)
                 .setNext(buzzHandler)
                 .setNext(buzzContainerHandler)
                 .setNext(numberHandler);
+
+
+            //fizzBuzzFakeDeluxeHandler
+            //    .setNext(fizzFakeDeluxeHandler)
+            //    .setNext(buzzFakeDeluxeHandler)
+            //    .setNext(fizzBuzzDeluxeHandler)
+            //    .setNext(fizzDeluxeHandler)
+            //    .setNext(buzzDeluxeHandler)
+            //    .setNext(fakeDeluxeHandler)
+            //    .setNext(deluxeHandler)
+            //    .setNext(fizzBuzzHandler)
+            //    .setNext(fizzBuzzContainerHandler)
+            //    .setNext(fizzHandler)
+            //    .setNext(fizzNumberContainerHandler)
+            //    .setNext(buzzHandler)
+            //    .setNext(buzzContainerHandler)
+            //    .setNext(numberHandler);
+
+
+
 
             string result = fizzBuzzFakeDeluxeHandler.Handle(number);
 
@@ -43,3 +64,4 @@
     }
 
 }
+
