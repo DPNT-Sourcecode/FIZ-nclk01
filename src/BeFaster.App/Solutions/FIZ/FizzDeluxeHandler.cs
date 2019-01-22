@@ -8,8 +8,8 @@ namespace BeFaster.App.Solutions.FIZ
         {
             if (    // deluxe
                 (
-                    (number % 3 == 0) && (Convert.ToString(number).IndexOf('3') >= 0) ||
-                    (number % 5 == 0) && (Convert.ToString(number).IndexOf('5') >= 0)
+                    ((number % 3 == 0) && (Convert.ToString(number).IndexOf('3') >= 0)) ||
+                    ((number % 5 == 0) && (Convert.ToString(number).IndexOf('5') >= 0))
                 )
                 &&
                 (   // fizz
@@ -27,4 +27,5 @@ namespace BeFaster.App.Solutions.FIZ
     }
 
 }
+
 
