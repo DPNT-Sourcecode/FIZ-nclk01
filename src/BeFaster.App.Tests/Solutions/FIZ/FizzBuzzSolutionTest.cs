@@ -13,7 +13,13 @@ namespace BeFaster.App.Tests.Solutions.FIZ
             return FizzBuzzSolution.FizzBuzz(number);
         }
 
-        [TestCase(50, ExpectedResult = "buzz")]
+        [TestCase(50, ExpectedResult = "buzz deluxe")]
+        public string BuzzDeluxeTest(int number)
+        {
+            return FizzBuzzSolution.FizzBuzz(number);
+        }
+
+        [TestCase(40, ExpectedResult = "buzz")]
         public string BuzzTest(int number)
         {
             return FizzBuzzSolution.FizzBuzz(number);
@@ -84,8 +90,8 @@ namespace BeFaster.App.Tests.Solutions.FIZ
             return FizzBuzzSolution.FizzBuzz(number);
         }
 
-        [TestCase(8888, ExpectedResult = "deluxe")]
-        public string DeluxeLessThan10000Test(int number)
+        [TestCase(8888, ExpectedResult = "8888")]
+        public string NumberLessThan10000Test(int number)
         {
             return FizzBuzzSolution.FizzBuzz(number);
         }
@@ -180,3 +186,4 @@ namespace BeFaster.App.Tests.Solutions.FIZ
     }
 
 }
+
