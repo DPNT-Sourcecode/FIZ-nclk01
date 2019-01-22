@@ -1,4 +1,6 @@
-﻿namespace BeFaster.App.Solutions.FIZ
+﻿using System;
+
+namespace BeFaster.App.Solutions.FIZ
 {
     public class FizzFakeDeluxeHandler : AbstractHandler
     {
@@ -6,9 +8,8 @@
         {
             if (
                 (   // deluxe
-                    (number % 11 == 0) ||
-                    (number % 111 == 0) ||
-                    (number % 1111 == 0)
+                    ((number % 3 == 0) && (Convert.ToString(number).IndexOf('3') >= 0)) ||
+                    ((number % 5 == 0) && (Convert.ToString(number).IndexOf('5') >= 0))
                 )
                 &&  // fake
                 (number % 2 == 1)

@@ -8,9 +8,8 @@ namespace BeFaster.App.Solutions.FIZ
         {
             if (
                 (   // delux
-                    (number % 11 == 0) ||
-                    (number % 111 == 0) ||
-                    (number % 1111 == 0)
+                     (Convert.ToString(number).IndexOf('3') >= 0) ||
+                     (Convert.ToString(number).IndexOf('5') >= 0)
                 )
                 &&
                 (   // fizz buzz
